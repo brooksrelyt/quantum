@@ -1,0 +1,91 @@
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: #3A3A3C !important;
+
+    .nav-link {
+        padding: 0 1em !important;;
+    }
+
+    .navbar-nav-right {
+        margin-right: 0 !important;
+        position: absolute;
+    }
+    .navbar-brand {
+        max-width: 150px;
+    }
+    .contact-btn {
+        color: #fff;
+        background-color: transparent;
+        padding: 0.5em 1.5em !important;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        // border: 1px solid $umd_lightgray;
+        letter-spacing: 1px;
+        display: inline-block;
+
+        @include media-breakpoint-down(md) {
+            background-color: transparent;
+            padding: 0.5rem 0 !important;
+            border: none;
+        }
+
+        &:hover, &:focus {
+            color: #fff;
+            // background-color: $umd_red !important;
+            // border: 1px solid $umd_red;
+        }
+    }
+    .give-btn {
+        color: #fff;
+        background-color: $umd_red;
+        padding: 0.5em 1.5em !important;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid $umd_red;
+        letter-spacing: 1px;
+        display: inline-block;
+
+        &:hover, &:focus {
+            color: #fff;
+            background-color: $umd_dkred !important;
+            border-color: $umd_dkred;
+        }
+
+        @include media-breakpoint-down(md) {
+            background-color: transparent;
+            padding: 0.5rem 0 !important;
+            border: none;
+
+            &:hover, &:focus {
+                background-color: transparent !important;
+            }
+        }
+    }
+    .navbar-right {
+        @include media-breakpoint-down(md) {
+            margin-top: 0.5em;
+            padding-top: 0.5em;
+            border-top: 1px solid #e1e1e1;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

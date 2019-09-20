@@ -1,0 +1,24 @@
+---
+---
+@import "variables";
+@import "normalize";
+@import "bootstrap/scss/bootstrap";
+@import "mixins";
+@import "base";
+
+// UTILITIES - Self-contained utilities
+@import "util/typography";
+@import "util/animations";
+@import "util/syntax";
+
+// COMPONENTS - Self-contained components
+@import "components/nav";
+@import "components/footer";
+@import "components/banner";
+@import "components/tabs";
+
+// PAGES - Page-specific styles
+@import "pages/homepage";
+
+// Project Specific - LIKE _base.scss but organized(sorta)
+@import "project";

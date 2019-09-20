@@ -1,0 +1,1044 @@
+// for fixed header when active
+/*.umdheader-wrap {
+    position: absolute !important;
+    width: 100%;
+    display: block;
+    top: 0;
+}*/
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    /*overflow-x: hidden;*/
+    height: 100%;
+    width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    // background-color: $umd_offwhite;
+    font-size: 16px;
+    line-height: 1.4;
+    // fonts @imports located in variables
+    font-family: $font-main;
+    color: $body-color;
+
+    // for fixed header when active
+    /*padding-top: 44px;*/
+}
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+p {
+    font-weight: 400 !important;
+
+    &.intro {
+        font-size: 21px;
+        line-height: 34px;
+        margin-bottom: 26px;
+
+        @include breakpoint(screen-xs) {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    } 
+}
+.shadow {
+    -webkit-text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.75);
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.75);
+}
+.lrg-container {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a {
+    color: $umd_red;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        color: $umd_dkred;
+    }
+
+    &.full {
+        width: 100%;
+    }
+}
+.pointer {
+    cursor: pointer;
+}
+
+
+.italic {
+    font-style: italic;
+}
+.uppercase { text-transform: uppercase !important; }
+.bold { font-weight: bold; }
+.crimson {
+    font-family: $font-crimson;
+}
+.body-color {
+    color: $body-color;
+}
+// Headings
+h1 {
+    &.thin {
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+}
+h2 {
+    &.thin {
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+}
+h3 {
+    &.thin {
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+}
+h4 {
+    color: $umd_red;
+}
+h5 {
+    color: $umd_red;
+}
+h6 {
+
+}
+.list-unstyled {
+    a {
+        color: $umd_gray;
+        font-size: 16px;
+        line-height: 21px;
+        padding-bottom: 1em;
+        display: block;
+    }
+}
+.letter-spacing {
+    letter-spacing: 1px;
+}
+.absolute {
+    position: absolute !important;
+}
+.relatve {
+    position: relative !important;
+}
+// Special Font Faces
+.georgia {
+    font-family: $font-georgia;
+}
+// Background Colors
+.dark-bg {
+    background-color: #3A3A3C;
+}
+.white-bg {
+    background-color: $white;
+}
+.red-bg {
+    background-color: $umd_red;
+}
+.gray-bg {
+    background-color: #f1f1f1;
+}
+// Colors
+.white {
+    color: $white !important;
+}
+.gray, .grey {
+    color: $umd_gray !important; 
+}
+.red {
+    color: $umd_red !important;
+}
+.yellow {
+    color: $umd_yellow !important;
+}
+// Padding Classes
+.spaces {
+    padding-top: 5.125rem;
+    padding-bottom: 5.125rem;
+
+    @include breakpoint(screen-md) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    @include breakpoint(screen-sm) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    @include breakpoint(screen-xs) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+}
+.spaces-large {
+    padding-top: 9.125rem;
+    padding-bottom: 9.125rem;
+
+    @include breakpoint(screen-md) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    @include breakpoint(screen-sm) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+    @include breakpoint(screen-xs) { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+}
+.med-spaces {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.no-pad, .no-pad-all {
+    padding: 0 !important;
+}
+.no-pad-top {
+    padding-top: 0 !important;
+}
+.no-pad-b {
+    padding-bottom: 0 !important;
+}
+.no-pad-l {
+    padding-left: 0 !important;
+}
+.no-pad-r {
+    padding-right: 0 !important;
+}
+.no-marg {
+    margin: 0 !important;
+}
+.no-marg-top {
+    margin-top: 0 !important;
+}
+.no-marg-b {
+    margin-bottom: 0 !important;
+}
+// Text Positions
+.center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+img {
+    width: 100%;
+    
+    &.center {
+        margin: 0 auto;
+    }
+}
+
+// Extras 
+hr {
+    border-top: 1px solid $umd_offwhite;
+    
+    &.hr-lrg {
+        border-width: 3px 0 0;
+
+        &.silver {
+            border-color: $umd_silver;
+        }
+    }
+    &.x-lrg {
+        border-top: 10px solid $white;
+        margin: 40px 0;
+    }
+    &.fifty {
+        width: 50px;
+    }
+}
+
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+
+// Modal - Centered Vertically
+// .modal {
+//   text-align: center;
+//   padding: 0!important;
+// }
+
+// .modal:before {
+//   content: '';
+//   display: inline-block;
+//   height: 100%;
+//   vertical-align: middle;
+//   margin-right: -4px;
+// }
+
+// .modal-dialog {
+//   display: inline-block;
+//   text-align: left;
+//   vertical-align: middle;
+
+//   @include breakpoint(screen-md) {
+//   }
+//   @include breakpoint(screen-sm) {
+//     width: 400px;
+//   }
+//   @include breakpoint(screen-xs) {
+//     width: 300px;
+//   }
+// }
+
+
+
+// Buttons
+.btn, .btn-info, .btn-info[disabled] {
+    /*margin-bottom: $pad;*/
+    font-family: $font-button;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 24px;
+    padding: 12px 24px;
+    color: $red !important;
+    border: 2px $red solid;
+    background-color: transparent;
+
+    &.pill {
+        font-size: 10px;
+        line-height: 10px;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+
+    &.yellow {
+        color: $umd_yellow !important;
+        border: 2px $umd_yellow solid;
+
+        &:hover {
+            background-color: $umd_yellow;
+            border-color: $umd_yellow;
+            color: $body-color !important;
+        }
+    }
+
+    &:hover {
+        background-color: $red;
+        border-color: $red;
+        color: #fff !important;
+    }
+
+    &:focus, &:active, &:active:focus {
+        background-color: $darkred;
+        border-color: $darkred;
+        color: #fff !important;
+        outline: 0;
+    }
+
+    &.thin {
+        border-width: 1px;
+    }
+
+    &.square {
+        border-radius: 0;
+        padding: 0.7rem 3rem !important;
+
+        &.dark {
+            background-color: rgba(0, 0, 0, 0.2); 
+
+            &:hover, &:focus {
+                background-color: $umd_red;
+            }
+        }
+    }
+    &.solid {
+        background-color: $umd_red;
+        color: $white !important;
+        border-width: 1px;
+        
+        &:hover, &:focus {
+            background-color: $darkred;
+            border-color: $darkred;
+        }
+    }
+    &.full {
+        width: 100%;
+    }
+}
+
+.button-group {
+    width: 100%;
+
+    &.three {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    &.four {
+        li {
+            width: 25%;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            box-sizing: border-box;
+
+
+            @include breakpoint(screen-md) {
+                width: 50% !important;
+                padding-left: 1em;
+
+                &:first-child, &:nth-child(3) {
+                    padding-left: 0;
+                }
+            }
+            @include breakpoint(screen-sm) {
+                width: 100%;
+            }
+            @include breakpoint(screen-xs) {
+                width: 100%;
+            } 
+        }
+
+        
+    }
+    &.five {
+        li {
+            width: 20%;
+            
+            margin-bottom: 0.5em;
+            box-sizing: border-box;
+
+
+            a {
+                padding: 0.7rem 1rem !important;
+                font-size: 13px;
+                font-weight: 700;
+            }
+
+
+            @include breakpoint(screen-md) {
+                width: 50% !important;
+                padding-left: 1em;
+
+                &:first-child, &:nth-child(3) {
+                    padding-left: 0;
+                }
+            }
+            @include breakpoint(screen-sm) {
+                width: 100%;
+            }
+            @include breakpoint(screen-xs) {
+                width: 100%;
+            } 
+        }
+    }
+
+    &.two {
+        li {
+            width: 50%;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            box-sizing: border-box;
+
+
+            @include breakpoint(screen-md) {
+                width: 50% !important;
+                padding-left: 1em;
+            }
+            @include breakpoint(screen-sm) {
+                width: 100%;
+            }
+            @include breakpoint(screen-xs) {
+                width: 100%;
+            } 
+        }
+    }
+
+    li {
+        width: 33.33333%;
+        float: left;
+        
+        @include breakpoint(screen-md) {
+            width: 100%;
+        }
+        @include breakpoint(screen-sm) {
+            width: 100%;
+        }
+        @include breakpoint(screen-xs) {
+            width: 100%;
+        } 
+
+        &:first-child a.text-btn {
+            margin-left: 0;
+        }
+        &:last-child a.text-btn {
+            margin-right: 0;
+        }
+    }
+}
+
+a.text-btn {
+    color: $umd_red;
+    background-color: $white;
+    /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);*/
+    padding: 0.7rem 3rem !important;
+    margin: 0 0.5rem 1rem 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $umd_lightgray;
+    letter-spacing: 1px;
+    display: inline-block;
+
+
+    @include breakpoint(screen-md) { margin: 0 0 1rem 0; }
+    @include breakpoint(screen-sm) { margin: 0 0 1rem 0; }
+    @include breakpoint(screen-xs) { margin: 0 0 1rem 0; }
+
+    &:hover, &:focus {
+        background-color: $umd_red !important;
+        color: $white;
+    }
+
+    &.hollow {
+        color: $umd_gray !important;
+        border: 1px solid $umd_gray;
+        background-color: transparent;
+
+        &:hover, &:focus {
+            background-color: $umd_red;
+            border: 1px solid $umd_red;
+            color: $white !important;
+        }
+
+        &.white {
+            color: $white !important;
+            border: 1px solid $white;
+
+            &:hover, &:focus {
+                background-color: $umd_red !important;
+                border: 1px solid $umd_red !important;
+                color: $white !important;
+            }
+        }
+    }
+}
+
+a.btn-tag {
+    display: inline-block;
+    color: $umd_gray !important;
+    border: 1px solid $umd_gray;
+    padding: 0.7rem 3rem !important;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    margin: 2rem 0 1rem 0 !important;
+    letter-spacing: 1px;
+
+    &:hover, &:focus {
+        background-color: $umd_red !important;
+        border: 1px solid $umd_red;
+        color: $white !important;
+        text-decoration: none;
+    }
+    
+    &.red {
+        border: 1px solid $umd_red;
+        color: $umd_red !important;
+
+        &:hover, &:focus {
+            color: $white !important;
+        }
+    }
+}
+
+.btn-white {
+    color: $white !important;
+    border-color: $white;
+}
+
+.panel-default {
+    border-color: $umd_lightgray;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
+    .panel, &.panel {
+        border-radius: 0;
+
+        .panel-body {
+            &.panel-body-lrg {
+                padding: 25px 45px;
+            }
+        }
+    }
+    hr {
+        border-top: 1px solid $umd_silver;
+    }
+    
+    h4 {
+        font-size: 21px;
+        line-height: 26px;
+    }
+}
+.portrait {
+    margin-bottom: 1em;
+}
+
+// Sidebar Styles
+.sidebar {
+    @include breakpoint(screen-lg) { margin-top: 1.5rem; padding-left: 15px; padding-right: 15px;}
+    @include breakpoint(screen-md) { margin-top: 1.5rem; padding-left: 15px; padding-right: 15px;}
+    @include breakpoint(screen-sm) { margin-top: 1.5rem; padding-left: 15px; padding-right: 15px;}
+    @include breakpoint(screen-xs) { margin-top: 1.5rem; padding-left: 15px; padding-right: 15px;}
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+// Ticker
+$duration: 30s;
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.ticker-main {
+    position: relative;
+    display: block;
+
+    .ticker-title {
+        z-index: 100;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+        background: $umd_dkred;
+        max-width: 200px;
+        
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.ticker-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: $umd_red; 
+    padding-left: 100%;
+
+    .ticker {
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 100%;
+
+        left: 0;
+
+        -webkit-animation-iteration-count: infinite; 
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: ticker;
+        animation-name: ticker;
+        -webkit-animation-duration: $duration;
+        animation-duration: $duration;
+
+        .ticker-item {
+            display: inline-block;
+            padding: 0 2rem;
+            color: white;   
+        }
+    }
+}
+
+// body { padding-bottom: 5rem; }
+// // h1,h2,p {padding: 0 5%;}
+
+.display-all {
+    a {
+        left: 50%;
+        position: absolute;
+        margin: 0 auto;
+        margin-left: -0.5em;
+
+        font-size: 2em;
+        // line-height: 2em;
+
+        svg #bl,
+        svg #bm,
+        svg #br,
+        svg #tl,
+        svg #tm,
+        svg #tr {
+            transform: translate(0, 0);
+            -webkit-transition: fill 350ms ease-in, transform 350ms ease-in;
+            -moz-transition: fill 350ms ease-in, transform 350ms ease-in;
+            -o-transition: fill 350ms ease-in, transform 350ms ease-in;
+            transition: fill 350ms ease-in, transform 350ms ease-in
+        }
+
+        &:hover, &:focus {
+            svg #bl,
+            svg #bm,
+            svg #br,
+            svg #tl,
+            svg #tm,
+            svg #tr {
+                transform: translate(0, 0);
+                -webkit-transition: fill 350ms ease-out, transform 350ms ease-out;
+                -moz-transition: fill 350ms ease-out, transform 350ms ease-out;
+                -o-transition: fill 350ms ease-out, transform 350ms ease-out;
+                transition: fill 350ms ease-out, transform 350ms ease-out
+            }
+
+            svg #bl,
+            svg #bm,
+            svg #br,
+            svg #tl,
+            svg #tm,
+            svg #tr {
+                fill: $umd_dkred;
+            }
+
+            svg #tl {
+                transform: translate(-3px, -3px)
+            }
+
+            svg #tm {
+                transform: translateY(-3px)
+            }
+
+            svg #tr {
+                transform: translate(3px, -3px)
+            }
+
+            svg #bl {
+                transform: translate(-3px, 3px)
+            }
+
+            svg #bm {
+                transform: translateY(3px)
+            }
+
+            svg #br {
+                transform: translate(3px, 3px)
+            }
+        }
+    }
+
+
+}
+
+.slide-link {
+    color: $umd_red;
+    margin-bottom: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $umd_red;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover {
+        color: $umd_red;
+
+        &::before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            -moz-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+}
+.pagination-link {
+    &.prev {
+        float: left;
+    }
+    max-width: 250px !important;
+    line-height: 24px;
+    padding-bottom: 7px;
+}
+
+
+
+
+.announcement-stat {
+    h1 {
+        color: #fff;
+        font-size: 100px;
+        text-transform: uppercase;
+        margin: 20px 0;
+
+        @include breakpoint(screen-lg) { font-size: 100px; }
+        @include breakpoint(screen-md) { text-align: center; font-size: 68px; }
+        @include breakpoint(screen-sm) { text-align: center; font-size: 55px; }
+        @include breakpoint(screen-xs) { text-align: center; font-size: 34px; }
+    }
+
+    p {
+        color: #fff;
+        margin: 20px 0;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 34px;
+
+        @include breakpoint(screen-lg) { text-align: center;}
+        @include breakpoint(screen-md) { text-align: center; font-size: 16px; line-height: 21px; }
+        @include breakpoint(screen-sm) { text-align: center; font-size: 16px; line-height: 21px; }
+        @include breakpoint(screen-xs) { text-align: center; font-size: 16px; line-height: 21px; }
+    }
+}
+
+/* Scroll down icon */
+
+@-webkit-keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+@-moz-keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+@-o-keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+@keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+
+.local-scroll {
+    z-index: 200;
+    margin-top: -75px;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+.scroll-down{
+    width: 150px;
+    height: 43px;
+    margin-left: -75px;
+    line-height: 43px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255,255,255, 1) !important;
+
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+
+}
+.scroll-down:hover,
+.scroll-down:focus{
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: rgba(255,255,255, 0) !important;
+}
+.scroll-down.static,
+.scroll-down.static{
+    color: rgba(255,255,255, .4) !important;
+}
+.scroll-down.static:hover,
+.scroll-down.static:focus{
+    letter-spacing: 3px;
+    color: rgba(255,255,255, .85) !important;
+}
+.scroll-down-icon{
+    width: 26px;
+    height: 100%;
+    margin-left: -13px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 2px solid rgba(255,255,255, .35);
+
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 13px;
+
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+    -webkit-animation: scroll-down-anim 1s infinite;
+    -moz-animation: scroll-down-anim 1s infinite;
+    -o-animation: scroll-down-anim 1s infinite;
+    animation: scroll-down-anim 1s infinite; 
+}
+
+.scroll-down-icon:after{
+    content: " ";
+    width: 2px;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background: rgba(255,255,255, .35);
+
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.scroll-down:hover .scroll-down-icon{
+    background: rgba(255,255,255, .7);
+}
+
+.scroll-down:hover .scroll-down-icon:after{
+    background: rgba(0,0,0, .5);
+}
+
+.carousel-inner {
+    // max-height: 800px;
+    .item {
+        .carousel-inner>.item {
+          width: 100%;
+
+}
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .carousel-caption {
+        position: absolute;
+        text-align: left;
+        top: 150px;
+        background-color: $umd_yellow;
+        color: $body-color;
+        padding: 0.5em 1em;
+        display: table;
+        text-shadow: none;
+        font-weight: bold;
+        text-transform: uppercase;
+
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+
+
+
+
+.secondNavImgs {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: .5s ease;
+    display: block;
+}
+
+
+.tab-content {
+    background-color: #fff;
+
+    img {
+        margin-top: -82px !important;
+        margin-bottom: -82px !important;
+        margin-right: -15px !important;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}
+.nav-tabs {
+    > li {
+        > a {
+            border: 0 !important;
+            border-radius: none !important;
+        }
+    }
+}
+
+.nav-tabs > li > a {
+
+}
+
+.table {
+    caption {
+        margin-bottom: 1em;
+        caption-side: top;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<footer class="spaces">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-bottom clearfix">
+                    <ul class="navbar-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#floorplans">Floor Plans</a></li>
+                        <li><a href="#facility">Facility</a></li>
+                        <li><a href="#fastfacts">Fast Facts</a></li>
+                        <li><a href="#support">Support Us</a></li>
+                        <!-- <li><a href="{{ site.baseurl }}/contact/">Contact</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-inner">
+            <div class="col-md-3">
+                <a href="http://www.umd.edu/"><img class="img-fluid footer-img" src="{{ site.baseurl }}/img/umd-logo.png" alt="University of Maryland Logo"></a>
+            </div>
+            <div class="col-md-5">
+                <p class="grey footer-info"><strong>Maryland Hillel</strong><br>7612 Mowatt Lane, College Park MD 20740, USA</p>
+                <p class="grey footer-info">P: 301.422.6200</p>
+            </div>
+            <div class="col-md-4">
+                <div class="social clearfix">
+                    <ul class="nav">
+                        <!-- <li><a href="https://www.youtube.com/user/UMD2101" target="_blank"><i class="fa fa-youtube-play"></i></a></li> -->
+                        <li><a href="https://www.facebook.com/marylandhillel/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/MarylandHillel" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/umdhillel/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="row white-bg sub-footer">
+    <div class="col-sm-12">
+        <div class="navbar-bottom clearfix">
+            <ul class="navbar-nav uppercase" aria-label="footer sub navigation menu">
+                <li><a href="https://studentaffairs.umd.edu/">Division of Student Affairs</a></li>
+                <li><a href="https://umd.service-now.com/itsc/?id=kb_article&article=KB0012192">Privacy Policy</a></li>
+                <li><a href="https://umd.edu/web-accessibility">Web Accessibility</a></li>
+                <li>&copy; 2018</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="{{ site.baseurl }}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/node_modules/jquery-zoom/jquery.zoom.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $('#floorPlansZoom , #floorPlansZoom2').zoom();
+        $('video').prop('muted',true).play()
+    });
+</script>
+

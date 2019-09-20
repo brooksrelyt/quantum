@@ -1,0 +1,23 @@
+@mixin breakpoint($point) {
+    @if $point == screen-xl {
+	@media screen and (max-width: 1500px) { @content; }
+	}
+	@if $point == screen-lg {
+		@media screen and (max-width: 1024px) { @content; }
+	}
+	@else if $point == screen-md {
+		@media screen and (max-width: 768px) { @content; }
+	}
+	@else if $point == screen-sm {
+		@media screen and (max-width: 660px) { @content; }
+	}
+	@else if $point == screen-xs {
+		@media screen and (max-width: 480px) { @content; }
+	}
+}
+
+@mixin calc($property, $expression) {
+	#{$property}: -moz-calc(#{$expression});
+	#{$property}: -webkit-calc(#{$expression});
+	#{$property}: calc(#{$expression});
+}

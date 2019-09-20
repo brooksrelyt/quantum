@@ -1,0 +1,141 @@
+.nav-sub-tabs {
+	.nav-link { font-size: 13px; padding: 0.5rem 1rem !important; }
+
+	.nav-pills {
+		border-right: 1px solid #e1e1e1;
+	}
+}
+.tabs-hover {
+	transition: all 100ms linear;
+	-webkit-transition: all 100ms linear;
+	-moz-transition: all 100ms linear;
+	-ms-transition: all 100ms linear;
+	-o-transition: all 100ms linear;
+
+	&:hover {
+		transition: all 100ms linear;
+		-webkit-transition: all 100ms linear;
+		-moz-transition: all 100ms linear;
+		-ms-transition: all 100ms linear;
+		-o-transition: all 100ms linear;
+	}
+
+	.fill {
+		background-size: 200% 200%;
+		background-image: linear-gradient(to top, $umd_red 50%, transparent 50%);
+		-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+
+		&:hover {
+			color: #fff;
+			border-color: $umd_red;
+			background-image: linear-gradient(to top, $umd_red 51%, transparent 50%);
+			background-position: 0 100%;
+			-webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+			-moz-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+			-ms-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+			-o-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+			transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+		}
+	}
+}
+.nav-pills {
+	border-right: 1px solid #e1e1e1;
+
+	// &:hover, &:focus {
+	// 	border: none;
+	// }
+}
+.tab-content, .tabs-hover {
+	.nav-link {
+		border-radius: 0 !important;
+		padding: 1em;
+		border-top: 1px solid #e1e1e1;
+		border-bottom: 1px solid #e1e1e1;
+		border-left: 1px solid #e1e1e1;
+		
+		background-color: #fff;
+
+
+		&.active {
+			background-color: $umd_red !important;
+		}
+	}
+}
+
+.floor-plan-tabs {
+	&.nav-pills {
+	    border-right: 0;
+	}
+	.nav-link {
+		font-size: 12px;
+		padding-left: 5px;
+		padding-right: 5px;
+		color: $body-color;
+		border-radius: 0;
+		cursor: pointer;
+		
+		&.active {
+			background-color: $umd_offwhite;
+			color: $body-color;
+		}
+	}
+
+	.tabs-box {
+		float: left;
+		height: 20px;
+		width: 20px;
+		margin-right: 15px;
+		clear: both;
+
+		&.red {
+			background-color: $umd_red;
+		}
+		&.purple {
+			background-color: #835998;
+		}
+		&.salmon {
+			background-color: #ff7f7d;
+		}
+		&.yellow {
+			background-color: #f7f398;
+		}
+		&.cafe {
+			background-color: #6ac642;
+		}
+		&.huddle {
+			background-color: #f57e20;
+		}
+		&.light-blue {
+			background-color: #c9dbff;
+		}
+		&.brown {
+			background-color: #b99a98;
+		}
+
+		&.green {
+			background-color: #26a659;
+		}
+		&.orange {
+			background-color: #ffc07f;
+		}
+		&.tan {
+			background-color: #fcdcb5;
+		}
+		&.light-green {
+			background-color: #c9fbdb;
+		}
+		&.light-purple {
+			background-color: #d891df;
+		}
+		&.blue {
+			background-color: #4ba4f3;
+		}
+		
+	}
+
+}
+
