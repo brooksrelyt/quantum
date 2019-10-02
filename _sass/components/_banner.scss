@@ -20,12 +20,12 @@ Hero Banner Styles
     }
 
     &.half-size {
-        height: 900px !important;
+        height: 75vh !important;
 
-        #hero {
-            top: -200px;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-        }
+        // #hero {
+        //     top: -200px;
+        //     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        // }
     }
 
     .header-banner {

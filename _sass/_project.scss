@@ -1,147 +1,61 @@
-.carousel-control {
-	font-size: 40px;
-	opacity: 8;
-}
-.modal-dialog {
-	max-width: 100%;
-	height: 100%;
-	margin: 0;
-	
+.section {
+	margin-top: -150px;
+	padding-left: 75px;
+	padding-right: 75px;
 
-	.modal-content {
-		border: none;
-		border-radius: 0;
+	h2 {
+		font-size: 42px;
+		line-height: 42px;
+		margin-bottom: 42px;
+		color: $body-color;
+		text-align: center;
+	}
+	p {
+		font-size: 21px;
+	}
+}
+
+.stats {
+	border-top: 1px solid #e1e1e1;
+	text-align: center;
+
+	.stats-inner {
+		padding: 20px 50px;
+		border-right: 1px solid #e1e1e1;
 		height: 100%;
-	}
-	.modal-footer {
-		bottom: 0;
-		position: absolute;
-		width: 100%;
-	}
-}
+		border-bottom: 1px solid #e1e1e1;
 
-.zoom {
-	display:inline-block;
-	position: relative;
-	border: 1px solid #e1e1e1;
-
-	img {
-		display: block;
-
-		&::selection { background-color: transparent; }
-	}
-}
-
-.paver {
-	border: 1px solid #fff;
-	border-radius: 4px;
-	padding: 80px 0;
-
-
-
-	.paver-inner {
-		border-right: 1px solid #fff;
-
-		a {
-			&:hover, &:focus {
-				text-decoration: none;
-
-				p { text-decoration: underline; }
-
-				h3 { color: #fff; }
-			}
-		}
-	}
-
-	h3 {
-		font-size: 55px;
-		color: $umd_yellow;
-		font-weight: bold;
-	}
-}
-
-#countdown {
-	font-family: monospace;
-	font-size: 42px;
-}
-
-.milestones {
-	position: relative;
-    // bottom: 30px;
-    // left: 30px;
-    width: 100%;
-    display: block;
-
-	.progress {
-		background-color: $umd_dkred !important;
-		height: 32px;
-		box-shadow: none;
-		border-radius: 0;
-
-		.progress-bar {
-			background-color: $umd_red !important;
-			box-shadow: none;
-
-			span {
-				text-align: right;
-				color: $body-color;
-				position: absolute;
-			    right: 15px;
-				line-height: 32px;
-				font-size: 13px;
-				font-weight: bold;
-				letter-spacing: 2px;
-				text-transform: uppercase;
-			}
-		}
-		
-		.progress-timeline {
-			position: absolute;
+		span {
+			font-size: 100px;
+			line-height: 100px;
+			font-weight: bold;
+			color: $umd_red;
+			margin-bottom: 15px;
 			display: block;
-			top: 45px;
-			width: 100%;
-
-			.milestone {
-				display: inline-block;
-
-				&:first-child {
-					width: 10.25%;
-
-					@include breakpoint(screen-md) { width: 47%; }
-				    @include breakpoint(screen-sm) { width: 47%; }
-				    @include breakpoint(screen-xs) { width: 47%; }
-				}
-
-				p {
-					text-transform: uppercase;
-					letter-spacing: 1px;
-				}
-			}
+		}
+		p {
+			font-size: 16px;
+			line-height: 21px;
 		}
 	}
+}
 
-	.milestones-fix {
-		margin-bottom: 100px;
+.card {
+	border: 1px solid #e1e1e1;
+	border-radius: 0;
+	.card-body {
+		hr {
+			max-width: 25px;
+			border-color: $body-color;
+		}
 	}
 }
-#module {
-	a.collapsed {
-		&:hover {
-        	text-decoration: underline;
-        	color: $umd_yellow;
-        }
-	}
-    a.collapsed:after {
-        content: '+ Read More';
-        font-weight: bold;
-        color: $umd_yellow;
-    }
-    a:not(.collapsed):after {
-        content: '- Read Less';
-        font-weight: bold;
-        color: $umd_yellow;
-    }
-} 
+
+
+
+
+
+
 
 
 
