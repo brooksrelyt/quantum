@@ -3,8 +3,7 @@ footer {
     // position: absolute;
     display: block;
     width: 100%;
-    background-color: #fff;
-    border-top: 1px solid #e1e1e1;
+    background-color: $umd_silver;
 
     .umd-logo {
         text-align: center;
@@ -12,8 +11,8 @@ footer {
     }
 
     &.spaces {
-        padding-top: 2em;
-        padding-bottom: 3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     .menu-centered {
@@ -25,10 +24,6 @@ footer {
     }
 
     .footer-inner {
-        padding-top: 1.5rem;
-        margin-top: 1.5rem;
-        border-top: 3px solid $umd_midgray;
-
         .menu-centered {
             text-align: center;
 

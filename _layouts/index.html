@@ -7,7 +7,7 @@
     {% include header.html %}
     {% include hero-banner.html %}
     <main>
-        <div class="container white-bg spaces section clearfix">
+        <div class="container white-bg spaces section">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
                     <h2 class="bold">Quantum at Maryland</h2>
@@ -68,8 +68,8 @@
             <div id="hero" class="header-banner overlay dark" style="background-image:url('{{ site.baseurl }}/img/science.jpg');" role="img" aria-label="website hero banner image"></div>
         </div>
 
-        <div class="white-bg clearfix">
-            <div class="container white-bg spaces section clearfix">
+        <div class="white-bg" id="quantumPromise">
+            <div class="container white-bg spaces section">
                 <div class="row">
                     <div class="col-md-10 offset-md-1">
                         <h2 class="bold">The Quantum Promise</h2>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container spaces no-pad-top clearfix">
+            <div class="container spaces no-pad-top">
                 <div class="row row-eq-height">
                     <div class="col-md-3 mb-5">
                         <div class="card h-100">
@@ -146,9 +146,240 @@
                 </div>
             </div>
         </div>
-        <div class="gray-bg">
+
+        <div class="gray-bg pt-3 pb-3" id="centersInstitutes">
+            <div class="container-fluid red-bg med-spaces">
+                <div class="row">
+                    <div class="col-md-12 mt-2 mb-2">
+                        <h2 class="bold white letter-spacing no-marg-b no-marg-top center large">Centers and Institutions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="gray-bg pt-3 pb-3">
+            <div class="container-fluid no-pad-all" id="about">
+                <section class="feature-container white-bg">
+                    <div class="feature image-left tab active animated fadeIn" id="courses">
+                        <div class="feature-container-inner container">
+                            <div class="feature-description grid-width">
+                                <div class="feature-content med-spaces">
+                                    <h2 class="large bold mt-2">Joint Quantum Institute</h2>
+                                    <hr class="hr-lrg one-fifty ml-0">
+                                    <p>The Joint Quantum Institute (JQI), founded in 2006, is the cornerstone of UMD’s quantum enterprise—internationally renowned as a preeminent center for groundbreaking research and innovative ideas. A research partnership with NIST supported by the Laboratory for Physical Sciences, JQI is dedicated to the broad study of quantum science, from theory to experiment, on a host of platforms. </p>
+                                    <a class="btn body-color yellow square" href="{{ site.baseurl }}/">Explore JQI</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-img-container">
+                            <div class="feature-img" style="background-image:url('{{ site.baseurl }}/img/centers/institute.jpg');">
+                                <!-- <div class="feature-img-inner">
+                                    <h3>Experienced Diversity Advocate Named UMD’s First VP of Diversity and Inclusion</h3>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="gray-bg pb-3">
+            <div class="container-fluid no-pad-all" id="about">
+                <section class="feature-container white-bg">
+                    <div class="feature image-left tab active animated fadeIn" id="courses">
+                        <div class="feature-container-inner container">
+                            <div class="feature-description grid-width">
+                                <div class="feature-content med-spaces">
+                                    <h2 class="large bold mt-2">Joint Center for Quantum Information and Computer Science</h2>
+                                    <hr class="hr-lrg one-fifty ml-0">
+                                    <p>The Joint Center for Quantum Information and Computer Science (QuICS) is a collaboration with NIST that expands research at the junction of quantum physics, computer science and information theory, enabling the full potential of quantum computing. </p>
+                                    <a class="btn body-color yellow square" href="{{ site.baseurl }}/">Explore Quics</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-img-container">
+                            <div class="feature-img" style="background-image:url('{{ site.baseurl }}/img/centers/institute.jpg');">
+                                <!-- <div class="feature-img-inner">
+                                    <h3>Experienced Diversity Advocate Named UMD’s First VP of Diversity and Inclusion</h3>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="gray-bg pb-3">
+            <div class="container-fluid no-pad-all" id="about">
+                <section class="feature-container white-bg">
+                    <div class="feature image-left tab active animated fadeIn" id="courses">
+                        <div class="feature-container-inner container">
+                            <div class="feature-description grid-width">
+                                <div class="feature-content med-spaces">
+                                    <h2 class="large bold mt-2">Quantum Technology Center</h2>
+                                    <hr class="hr-lrg one-fifty ml-0">
+                                    <p>The Quantum Technology Center joins researchers in engineering and physics to focus on translating quantum physics into innovative technologies.</p>
+                                    <a class="btn body-color yellow square" href="{{ site.baseurl }}/">Explore QTC</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-img-container">
+                            <div class="feature-img" style="background-image:url('{{ site.baseurl }}/img/centers/institute.jpg');">
+                                <!-- <div class="feature-img-inner">
+                                    <h3>Experienced Diversity Advocate Named UMD’s First VP of Diversity and Inclusion</h3>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="gray-bg pb-3">
+            <div class="container-fluid no-pad-all" id="about">
+                <section class="feature-container white-bg">
+                    <div class="feature image-left tab active animated fadeIn" id="courses">
+                        <div class="feature-container-inner container">
+                            <div class="feature-description grid-width">
+                                <div class="feature-content med-spaces">
+                                    <h2 class="large bold mt-2">Condensed Matter Theory Center</h2>
+                                    <hr class="hr-lrg one-fifty ml-0">
+                                    <p>The Condensed Matter Theory Center, partially supported by Microsoft Research and led by Distinguished University Professor Sankar Das Sarma, has made pioneering contributions to exotic approaches to quantum computing now being pursued worldwide.</p>
+                                    <a class="btn body-color yellow square" href="{{ site.baseurl }}/">Explore CMCT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-img-container">
+                            <div class="feature-img" style="background-image:url('{{ site.baseurl }}/img/centers/institute.jpg');">
+                                <!-- <div class="feature-img-inner">
+                                    <h3>Experienced Diversity Advocate Named UMD’s First VP of Diversity and Inclusion</h3>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="gray-bg pb-3">
+            <div class="container-fluid no-pad-all" id="about">
+                <section class="feature-container white-bg">
+                    <div class="feature image-left tab active animated fadeIn" id="courses">
+                        <div class="feature-container-inner container">
+                            <div class="feature-description grid-width">
+                                <div class="feature-content med-spaces">
+                                    <h2 class="large bold mt-2">Center for Quantum Materials and Devices</h2>
+                                    <hr class="hr-lrg one-fifty ml-0">
+                                    <p>The Center for Quantum Materials and Devices is a specialized research center in the Department of Physics where scientists explore existing superconductors, as well as the study and creation of novel quantum materials, with the goal of enabling new devices, ranging from sensors to secure communications equipment.</p>
+                                    <a class="btn body-color yellow square" href="{{ site.baseurl }}/">Explore CNAM</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-img-container">
+                            <div class="feature-img" style="background-image:url('{{ site.baseurl }}/img/centers/institute.jpg');">
+                                <!-- <div class="feature-img-inner">
+                                    <h3>Experienced Diversity Advocate Named UMD’s First VP of Diversity and Inclusion</h3>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <div class="hero-wrapper half-size">
+            <div id="hero" class="header-banner overlay dark" style="background-image:url('{{ site.baseurl }}/img/quantum.jpg');" role="img" aria-label="website hero banner image"></div>
+        </div>
+
+        <div class="white-bg" id="quantumAlliance">
             <div class="container white-bg spaces section">
                 <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h2 class="bold">Maryland Quantum Alliance</h2>
+                        <p>The University of Maryland is convening the Maryland Quantum Alliance, a collaborative consortium of research institutions from throughout the region. The alliance will further enable quantum researchers on campus to deepen and expand their partnerships.</p>
+                        <p>The Maryland Quantum Alliance will:</p>
+                        <ul>
+                            <li class="mb-3"><b>Organize workshops</b> and provide networking opportunities </li>
+                            <li class="mb-3"><b>Fast-track workforce development</b> through interdisciplinary quantum education </li>
+                            <li class="mb-3"><b>Explore opportunities for industry engagement</b> through rotation programs and internships</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container spaces no-pad-top">
+                <div class="row row-eq-height">
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <img class="w-25 center mb-3" src="{{ site.base }}/img/icons/government.jpg" alt=" ">
+                                <p><b class="center red">Government</b><hr /> Government and academic researchers working side-by-side to drive quantum discovery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <img class="w-25 center mb-3" src="{{ site.base }}/img/icons/academics.jpg" alt=" ">
+                                <p><b class="center red">Academics</b><hr /> Partnering with academic institutions to develop quantum education and scholarship</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <img class="w-25 center mb-3" src="{{ site.base }}/img/icons/corporations.jpg" alt=" ">
+                                <p><b class="center red">Corporations / Industry</b><hr /> Engaging with industry to build a quantum workforce and lead quantum innovation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gray-bg pt-3 pb-3">
+            <div class="container-fluid yellow-bg med-spaces">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mt-2 mb-2">
+                            <h3 class="bold body-color letter-spacing center large mb-3">Latest News</h3>
+                        </div>
+                        <div class="col-md-4 offset-md-2">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <strong>News from The Joint Quantum Institute</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <strong>News from Joint Center for Quantum Information and Computer Science</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="white-bg">
+            <div class="container white-bg spaces">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1 center">
+                        <h2 class="large bold">Contacts</h2>
+                        <h3 class="body-color bold">For Research</h3>
+                        <p>First Name Lastname<br>
+                            —<br>
+                            301.405.XXXX<br>
+                            XXXXXXX@umd.edu</p>
+
+                        <h3 class="body-color bold">For partnerships</h3>
+                        <p>Laurie E. Locascio, Ph.D.<br>
+                            Vice President for Research<br>
+                            —<br>
+                            301.405.4175<br>
+                            lel@umd.edu</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -86,7 +86,7 @@ a {
     font-family: $font-crimson;
 }
 .body-color {
-    color: $body-color;
+    color: $body-color !important;
 }
 // Headings
 h1 {
@@ -149,6 +149,9 @@ h6 {
 }
 .red-bg {
     background-color: $umd_red;
+}
+.yellow-bg {
+    background-color: $umd_yellow;
 }
 .gray-bg {
     background-color: #f1f1f1;
@@ -237,12 +240,16 @@ hr {
             border-color: $umd_silver;
         }
     }
+
     &.x-lrg {
         border-top: 10px solid $white;
         margin: 40px 0;
     }
     &.fifty {
         width: 50px;
+    }
+    &.one-fifty {
+        width: 150px;
     }
 }
 

@@ -90,9 +90,12 @@ small {
     font-size: 2em;
     line-height: 1em;
 }
-.large {
-    font-size: 56px !important;
-    font-weight: 300;
+
+h2.large {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 42px;
+    color: $body-color;
 }
 
 // Blockquotes
