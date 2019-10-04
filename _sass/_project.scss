@@ -16,14 +16,15 @@
 }
 
 .stats {
-	border-top: 1px solid #e1e1e1;
 	text-align: center;
+
 
 	.stats-inner {
 		padding: 20px 50px;
 		border-right: 1px solid #e1e1e1;
 		height: 100%;
-		border-bottom: 1px solid #e1e1e1;
+		border-top: 1px solid #e1e1e1;
+        height: 300px;
 
 		span {
 			font-size: 100px;
@@ -51,6 +52,10 @@
 	}
 }
 
+
+
+// Feature items breakpoint ----
+$breakpoint-feature: 1400px;
 .feature-container {
     background-color: #f1f1f1;
 
@@ -61,15 +66,38 @@
         transition: 1s opacity;
         background-color: #fff;
 
+        @media (max-width: $breakpoint-feature) { 
+            height: 100%;
+        }
+
         @include media-breakpoint-down(md) {
             height: inherit;
             padding: 1.5em 0;
+        }
+
+        &.image-left .feature-description{
+            float: right;
+            padding-left: 2.5em;
+        }
+        &.image-left .feature-img-container {
+            right: 50%;
+            left: 95px;
+            margin-right: -95px;
         }
 
         .feature-container-inner {
             height: 100%;
             padding-left: 15px;
             padding-right: 15px;
+
+            @media (max-width: $breakpoint-feature) { 
+                display: inline-block !important;
+            }
+
+            .btn {
+                color: $body-color !important;
+                font-weight: bold;
+            }
 
             .feature-description {
                 display: inline-block;
@@ -79,6 +107,10 @@
                 padding: 0;
                 padding-left: 2.5em;
                 width: 75%;
+
+                @media (max-width: $breakpoint-feature) { 
+                    width: 100%;
+                }
 
                 @include media-breakpoint-down(md) {
                     width: 100%;
@@ -107,8 +139,8 @@
             transform: translate3d(0, 0, 0);
             width: 400px;
 
-            @include media-breakpoint-down(md) { 
-                display: none;
+            @media (max-width: $breakpoint-feature) { 
+                display: none !important;
             }
 
             .feature-img {
@@ -215,7 +247,20 @@
 	}
 }
 
-
+.promise {
+    .card-body {
+        img {
+            height: 175px;
+        }
+    }
+}
+.alliance {
+    .card-body {
+        img {
+            height: 70px;
+        }
+    }
+}
 
 
 

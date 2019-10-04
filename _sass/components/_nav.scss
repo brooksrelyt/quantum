@@ -1,15 +1,41 @@
+.header-bg {
+    &.navbar {
+        background-color: #000 !important;
+    }
+    
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
 .navbar {
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color: #3A3A3C !important;
+    background-color: transparent !important;
+
+    @include media-breakpoint-down(md) {background-color: #000 !important;}
 
     .nav-link {
-        padding: 0 1em !important;;
+        padding: 0 1em !important;
+        color: #fff !important;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-shadow: 0 0 3px #000;
     }
 
     .navbar-nav-right {
         margin-right: 0 !important;
         position: absolute;
+        right: 15px;
+
+        @include media-breakpoint-down(md) {
+            position: relative;
+
+            a {
+                text-align: left;
+                line-height: 32px;
+            }
+        }
     }
     .navbar-brand {
         max-width: 150px;

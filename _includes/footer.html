@@ -25,9 +25,9 @@
                 <div class="social clearfix">
                     <ul class="nav">
                         <!-- <li><a href="https://www.youtube.com/user/UMD2101" target="_blank"><i class="fa fa-youtube-play"></i></a></li> -->
-                        <li><a href="https://www.facebook.com/marylandhillel/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/MarylandHillel" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/umdhillel/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                     </ul>  
                 </div>
             </div>
@@ -55,9 +55,13 @@
 
 
 <script>
-    $(document).ready(function(){
-        $('#floorPlansZoom , #floorPlansZoom2').zoom();
-        $('video').prop('muted',true).play()
+    $(window).scroll (function () {
+        var sT = $(this).scrollTop();
+        if (sT >= 500) {
+            $('.navbar').addClass('header-bg');
+        } else {
+            $('.navbar').removeClass('header-bg');
+        }
     });
 </script>
 
